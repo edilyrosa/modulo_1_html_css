@@ -1,0 +1,10 @@
+h1{
+    color: rgb(73, 55, 234);
+}
+.cuadrado{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+
+}
