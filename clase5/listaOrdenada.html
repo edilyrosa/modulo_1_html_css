@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Ordenada 📃</title>
+    <style>
+        #upper-roman{list-style-type: upper-roman;}
+        #lower-roman{
+            list-style-type: lower-roman;
+            list-style-position: inside;
+        }
+        /* .img{
+            list-style-image: url('https://www.phoneheroeslondon.co.uk/wp-content/uploads/2015/01/cropped-PHONE-HEROES-LOGO-16px-x-16px.png');
+        } */
+
+       .img li::before {
+            content: url('https://cdn-icons-png.flaticon.com/32/1077/1077063.png'); 
+            margin-right: 5px; 
+        }
+
+        .atajo{
+            list-style: upper-alpha  inside none;
+        }
+        #ul-style ::marker{
+            color: red;
+            font-size: 30;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Lista Ordenada 📃</h1>
+        <div>
+
+            <ul id="ul-style">
+                <li>Eliana</li>
+                <li>Eli</li>
+                <li>Edily</li>
+            </ul>
+
+            <ol class="atajo">
+                <li>Soy Primero</li>
+                <li>Soy Segundo</li>
+                <li>Soy Tercero</li>
+                <li>Soy Cuardo</li>
+            </ol>
+            
+            <ol class="img">
+                <li>Soy Primero</li>
+                <li>Soy Segundo</li>
+                <li>Soy Tercero</li>
+                <li>Soy Cuardo</li>
+            </ol>
+            
+            <ol id="upper-roman">
+                <li>Soy Primero con style</li>
+                <li>Soy Segundo</li>
+                <li>Soy Tercero</li>
+                <li>Soy Cuardo</li>
+            </ol>
+            <ol id="lower-roman" start="4" reversed>
+                <li>Soy Primero ROMANOS </li>
+                <li>Soy Segundo</li>
+                <li>Soy Tercero</li>
+                <li>Soy Cuardo</li>
+            </ol>
+            <ol type="a" start="2">
+                <li>Soy Primero</li>
+                <li>Soy Segundo</li>
+                <li>Soy Tercero</li>
+                <li>Soy Cuardo</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
