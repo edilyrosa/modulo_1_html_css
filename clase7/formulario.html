@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="./procesa-datos.php" method="GET || POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        
+        <br>
+        <input type="password" placeholder="tu clave">
+        <br>
+        <input type="tel" placeholder="tu cel">
+        <br>
+        <input type="url" value="https://www.google.com" placeholder="la URL de la img">
+        
+        <br>
+        <input type="number" name="edad" placeholder="tu edad">
+        
+        <br>
+        <input type="search" placeholder="la URL de la img">
+        
+        <br>
+        <label>Cual fecha?: 
+            <input type="date">
+        </label>
+        <br>
+        <input type="datetime-local">
+        <br>
+        <input type="month">
+        <br>
+        <input type="color">
+        <br>
+        <input type="file">
+        
+        <!-- ? LOS RADIO: MISMO ATR "name" DIF "value" -->
+        <label> Hombre
+            <input type="radio" name="genero" value="hombre">
+        </label>
+        <label> Mujer
+            <input type="radio" name="genero" value="Mujer">
+        </label>
+
+        <br><br><br>       
+ <!-- ? LOS CHECKBOX: MISMO ATR "name" DIF "value" -->
+        <label> fresa
+            <input type="checkbox" name="sabores" value="fresa">
+        </label>
+        <label> Chocolate
+            <input type="checkbox" name="sabores" value="cholate">
+        </label>
+        <label> Mantecado
+            <input type="checkbox" name="sabores" value="mantecado">
+        </label>
+        <label for="sabor-mani"> Mani </label>
+            <input type="checkbox" id="sabor-mani" name="sabores" value="mani">
+        
+
+   <br><br><br>  
+     <label>Cual fecha con mas atrb?: 
+            <input 
+            type="date"
+            name="fecha"
+            min="2024-02-25"
+            max="2024-12-25"
+            step="3"
+            >
+        </label>
+
+
+
+        <!-- ?las listas desplegables -->
+        
+        <br><br><br> 
+        <select name="pais" id="pais">
+            <option value="VENEZUELA">Venezuela</option>
+            <option value="CO">Colombia</option>
+            <option value="AR">Argentina</option>
+        </select>
+        
+        <!-- ? textarea -->
+          <br><br><br> 
+          <textarea>Escrite tu comentario</textarea>
+          <br><br><br> 
+
+         <textarea 
+         placeholder="Escrite tu comentario"
+         rows="6"
+         cols="50"
+         maxlength="300"
+         minlength="20"
+         required
+         >Escrite tu comentario</textarea>
+
+        
+        <br><br><br>
+        <input type="reset" value="Limpiar">
+        <!-- ? uno de dos: <input type="submit" value="Enviar"> -->
+        <button type="submit" value="Enviar">Enviar Btn</button>
+        
+    </form>
+</body>
+</html>

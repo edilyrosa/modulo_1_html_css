@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="miFormulario">
+        <input id="nombre" type="text" placeholder="nombre">
+        <input id="email" type="email" placeholder="correo">
+        <input 
+            type="image" 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkhc7Acg-F8Wxk5BgHJjDiUp6ZjujU1_RrsQ&s"
+            width="50" height="50"
+            >
+    </form>
+
+    <script>
+
+        // Selecciona el formulario por su id
+        const formulario = document.getElementById('miFormulario');
+
+        formulario.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que la página se recargue al enviar el formulario
+
+        // Recoge los valores de los inputs
+        const nombre = document.getElementById('nombre').value;
+        const email = document.getElementById('email').value;
+
+        // Crea objeto con los datos
+        const datosUsuario = {
+            nombre: nombre,
+            email: email
+        };
+
+        // Muestra el objeto en la consola
+        console.log('Datos enviados:', datosUsuario);
+
+        // Opcional: restablece el formulario
+        formulario.reset();
+});
+
+    </script>
+</body>
+</html>
