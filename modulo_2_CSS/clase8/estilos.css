@@ -1,0 +1,47 @@
+
+        h1{
+            color: darkcyan;
+            text-align: center;
+            font-family: 'Segoe UI', Thaoma, Verdana, sans-serif;
+        }
+        .parrafo-principal{
+            background-color: lightgray;
+            padding: 15px; 
+            border: 2px solid darkgrey; 
+            border-radius: 8px;
+        }
+        
+        .parrafo-destacado{
+            color: #6a0dad;
+            font-size: 18px; 
+            font-weight: bold;
+        }
+
+        .div-span{
+            margin:20px;
+            text-align: right;
+        }
+
+        .texto-italico{
+         
+            font-style: italic; 
+           color: red; 
+        }
+        .texto-normal{
+              font-style: normal; 
+            color: blue;
+        }
+
+        .item1{
+            background-color: #f0f8ff; margin-bottom: 5px; padding: 5px;
+        }
+        .item2{
+        background-color: #e0f8ff; margin-bottom: 5px; padding: 5px     
+       }
+
+       section{
+        color: rgb(99, 24, 221);
+        font-size: 50px  !important;
+       }
+    
+
