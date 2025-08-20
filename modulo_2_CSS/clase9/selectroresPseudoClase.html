@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 200px;
+            height: 100px;
+            border-radius: 12px;
+            border:yellow 5px solid;
+            background-color: white;
+            color: navy;
+        }
+
+        button:hover{
+            background-color: navy;
+            color: white;
+            cursor: pointer;
+            border: initial;
+
+        }
+        .clickeada{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-radius: 50%;
+        }
+        .clickeada:active{
+            background-color: purple;
+              border-radius: 0%;
+        }
+
+        .clase-visitada:visited{
+            color: red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>selectores Pseudoclase</h1>
+
+    <button>Hazme Hover</button>
+    <br><br>
+    <a href="https://www.facebook.com" class="clase-visitada">No visitada verde, ya visitada roja</a>
+    <br><br>
+    <a href="https://www.google.com">No cambiare</a>
+    <br><br>
+
+    <div class="clickeada"></div>
+
+</body>
+</html>

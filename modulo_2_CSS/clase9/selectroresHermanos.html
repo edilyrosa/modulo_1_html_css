@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section + p{
+            color: red;
+        }
+        section ~ p{
+            color: red;
+        }
+        section ~ div{
+            font-size: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>selectores hermanos</h1>
+
+    <div>
+        <section>soy selector, NO SERE AFECTADO</section>
+        <div>soy la div</div>
+        <p>soy p, sere roja</p>
+        <p>soy p</p>
+        <p>soy p</p>
+    </div>
+</body>
+</html>
