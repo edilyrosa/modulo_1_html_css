@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus{
+            border: rgb(127, 243, 127) 5px solid;
+        }
+
+        input:checked{
+            outline: hotpink 2px solid;
+        }
+        input:disabled{
+            background-color: rgb(193, 187, 187);
+        }
+        input:enabled{
+            font-weight:800;
+        }
+        input:required{
+            border: red 2px solid;
+        }
+        input:optional{
+            border-radius: 20%;
+        }
+
+       #la-ul li:first-child{
+            color: blue;
+        }
+       /* li:last-child{
+            padding: 20px;
+        } */
+
+         #la-ul li:nth-child(odd){
+            background-color: rgb(241, 241, 237);
+        }
+         #la-ul li:nth-child(even){
+            font-weight: 800;
+        }
+
+         :first-child{
+           padding: 50px;
+        }
+
+        /* :not(#la-ul > li){
+            background-color: black;
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>Formulario con estados</h1>
+    <p>todo input en su momento tendra foco</p>
+    <p>todo input que no es requierdo es opcional</p>
+    <p>todo input que no este "disable" esta habilitado </p>
+    <p>todo input "disable" no tiene foco </p>
+
+    <form>
+        <input>
+        <input type="text" placeholder="requerido" required>
+        <input type="email" placeholder="email" required>
+        <input type="text" placeholder="opcional" >
+        <input type="text" placeholder="no habilitado" disabled> 
+        <br>
+
+        <label>
+          si
+          <input type='radio' value="si" name="aceptar" checked>
+        </label>
+        <label>
+          no
+          <input type='radio' value="no" name="aceptar">
+        </label>
+    </form>
+
+
+    <h2> pos de hijos</h2>
+    <ul id="la-ul">
+        <li>hijo 1 aquiiii</li>
+        <li>hijo 2</li>
+        <li>hijo 3</li>
+        <li>hijo 4</li>
+        <li>hijo 5</li>
+    </ul>
+    <ul>
+        <li>hijo 1</li>
+        <li>hijo 2</li>
+        <li>hijo 3</li>
+        <li>hijo 4</li>
+        <li>hijo 5</li>
+    </ul>
+</body>
+</html>
