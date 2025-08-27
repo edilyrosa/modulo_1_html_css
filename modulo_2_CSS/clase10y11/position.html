@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+        
+        .static{
+            background-color: rgb(10, 227, 57);
+            position: static;
+            /* margin: 0 auto; */
+        }
+        
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 50px;
+            background-color: lightcoral;
+        }
+        .adsolute{
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            background-color: rgb(183, 227, 11);
+
+        }
+
+        .adsolute-padre{
+             position:  absolute;
+            top: 200px;
+            left: 500px;
+            background-color: rgb(72, 42, 180);
+        }
+
+
+       
+    </style>
+</head>
+<body>
+    <div class="static">box 1 static </div>
+    <div class="relative">box 2: soy relative</div>
+    
+    <div  class="adsolute-padre">
+        <div class="adsolute">box 3: adsoluta****</div>
+    </div>
+
+
+    <div>box 4</div>
+    <div>box 5</div>
+</body>
+</html>

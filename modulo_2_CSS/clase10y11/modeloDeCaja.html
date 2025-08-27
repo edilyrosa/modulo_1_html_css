@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja</title>
+
+    <style>
+        p, span{
+            background-color: rgb(231, 170, 170);
+            margin: 60px;
+            padding: 20px;
+            border: red 5px solid;
+        }
+
+        .content-box{
+            background-color: rgb(101, 184, 207);
+            margin: 60px;
+            padding: 20px;
+            border: rgb(5, 63, 77) 10px solid;
+            /* width: 200px;
+            height: 200px; */
+            /* box-sizing: content-box; */
+
+        }
+        .border-box{
+            background-color: rgb(101, 184, 207);
+            margin: 60px;
+            padding: 20px;
+            border: rgb(5, 63, 77) 10px solid;
+            width: 200px;
+            height: 200px;
+            /* ⚠️lo oculta */
+            overflow: hidden;
+              /* ❌ siempre crea la barra */
+            overflow: scroll;
+              /*  ✅si es necesario  */
+            overflow: auto;
+           
+
+        }
+
+        *,
+        *::before,
+        *::after{
+               box-sizing: border-box;
+        }
+
+
+
+        .contenedor-responsivo{
+            background-color: rgb(125, 189, 35);
+            margin: 60px;
+            padding: 20px;
+            border: rgb(5, 63, 77) 10px solid;
+            width: 200px;  /* desde aca parte */
+            height: 200px;
+
+            max-width: 80%;
+            min-width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelo de Caja</h1>
+    <p>soy de BLOQUE </p>
+    <span> soy de LINEA </span>
+   
+
+    <br><br>
+    <br><br>
+
+    <section class="content-box">
+        soy contenido con content-box ancho: 200px+20px+5px
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+    </section>
+    <section class="border-box">
+        soy contenido con border-box ancho: 200px
+     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus fugiat minima molestias, harum ipsa nobis culpa minus optio aut possimus error vel eveniet corporis ad alias repudiandae dolor velit. Harum.
+        Lorem ipsum dolor sit, a
+    
+    </section>
+
+
+    <div class="contenedor-responsivo">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae esse aut ab expedita corrupti velit nemo perferendis quisquam molestias id ullam ducimus adipisci, assumenda ex recusandae earum. Atque, fuga.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae esse aut ab expedita corrupti velit nemo perferendis quisquam molestias id ullam ducimus adipisci, assumenda ex recusandae earum. Atque, fuga.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae esse aut ab expedita corrupti velit nemo perferendis quisquam molestias id ullam ducimus adipisci, assumenda ex recusandae earum. Atque, fuga.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae esse aut ab expedita corrupti velit nemo perferendis quisquam molestias id ullam ducimus adipisci, assumenda ex recusandae earum. Atque, fuga.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae esse aut ab expedita corrupti velit nemo perferendis quisquam molestias id ullam ducimus adipisci, assumenda ex recusandae earum. Atque, fuga.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae esse aut ab expedita corrupti velit nemo perferendis quisquam molestias id ullam ducimus adipisci, assumenda ex recusandae earum. Atque, fuga.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae esse aut ab expedita corrupti velit nemo perferendis quisquam molestias id ullam ducimus adipisci, assumenda ex recusandae earum. Atque, fuga.
+        </p>
+    </div>
+</body>
+</html>

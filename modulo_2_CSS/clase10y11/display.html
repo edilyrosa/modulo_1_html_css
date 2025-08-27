@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        section{
+            background-color: red;
+            width: 500px;
+            margin: 60px;
+            /* display: block; */
+            display: inline;
+            /* mantioene el espacio */
+            /* visibility: hidden;  */
+        }
+        
+        div *{
+            background-color: red;
+            width: 500px;
+            margin: 60px;
+            display: block;
+            /* libera el espacio */
+            /* display: none;  */
+
+        }
+
+
+        ul li{
+             background-color: aqua;
+            width: 200px;
+            margin: 30px;
+            display: inline-block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Display</h1>
+    <section>bloque 1</section>
+    <section>bloque 2</section>
+    <br><br>
+    
+    <div>
+        <a href="#">Enlace</a>
+        <strong>Resaltare</strong>
+        <input type="text" placeholder="reconozco ancho">
+    </div>
+
+    <br><br>
+
+    <ul>
+        <nav>
+            <li>inicio</li>
+            <li>servicios</li>
+            <li>contactanos</li>
+        </nav>
+    </ul>
+</body>
+</html>
