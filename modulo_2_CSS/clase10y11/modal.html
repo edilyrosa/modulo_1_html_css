@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal absolute</title>
+
+    <style>
+        .contenedor-modal-relative{
+            height: 100vh;
+            background-color: rgba(0,0,0,.5);
+            position: relative;
+        }
+
+        .modal-absoluto{
+            width: 300px;
+            height: 200px;
+            background-color: aliceblue;
+            padding: 5px;
+            border: 2px black solid;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 8px  rgba(0,0,0,.4);;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor-modal-relative">
+        <div class="modal-absoluto">
+            <h1>Modal absolute</h1>
+            <p>esta seguro de que...</p>
+            <button>Aceptar</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

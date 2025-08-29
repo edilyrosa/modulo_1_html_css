@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad position</title>
+    <style>
+        
+        body{
+            margin: 0px;
+        }
+
+        section{
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            padding: 5px;
+            border: 5px black solid;
+        }
+        .static{
+            background-color: aqua;
+            position: static;
+            /* no reconoce coord. de position */
+            left: 20px;
+            top: 20px;
+            /* margin: 0 auto; */
+        }
+        .relative{
+            background-color: rgb(64, 230, 19);
+            position: relative;
+            /* si reconoce coord. de position */
+            left: 20px;
+            top: 20px;
+        }
+        .absolute{
+            background-color: rgb(72, 35, 164);
+            position: absolute;
+            /* si reconoce coord. de position */
+            left: 20px;
+            top: 20px;
+        }
+        .absolute-padre{
+            background-color: rgb(202, 31, 51);
+            position: absolute;
+            /* si reconoce coord. de position */
+            left: 50%;
+            top: 20px;
+        }
+
+          .fixed{
+            background-color: rgb(145, 150, 144);
+            position: fixed;
+            /* si reconoce coord. de position */
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+
+          .stick{
+            background-color: rgb(243, 16, 186);
+            position: sticky;
+            /* si reconoce coord. de position */
+            left: 0px;
+            top: 0px;
+        }
+
+        p{
+            margin-top: 50px;
+        }
+
+        .float{
+            background-color: black;
+            float: right;
+            float: left;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Propiedad position</h1>
+
+    <section class="static">Elemento 1: static</section>
+    <section class="relative">Elemento 2:relative</section>
+    
+    <section class="absolute-padre">Elemento x: absolute PADRE
+        <section class="absolute">Elemento 3: absolute HIJO</section>
+    </section>
+    
+    
+    
+    
+    <section class="fixed">Elemento 4: fixed</section>
+
+
+    <section class="stick">Elemento 5:stick</section>
+    
+    
+    <section class="float">Elemento 6:Pripuedad float</section>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cum beatae provident soluta labore sint vitae, aliquid deleniti non. Blanditiis optio laborum eius atque illum inventore sapiente eum enim voluptates.</p>
+    
+</body>
+</html>
