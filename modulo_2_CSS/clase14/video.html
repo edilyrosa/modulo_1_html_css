@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO</title>
+</head>
+<body>
+    <h1>VIDEO</h1>
+    <!-- <video width="400" height="400" controls autoplay loop preload="auto">
+        <source src="https://videos.pexels.com/video-files/8721932/8721932-uhd_2732_1440_25fps.mp4" type="video/mp4">
+        <source src="" type="">
+    </video> -->
+
+    <video width="400" height="400" controls autoplay loop preload="auto" muted>
+         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        tu navegador no soporta tag video
+    </video>
+
+    <hr>
+
+    <audio controls>
+    <!-- <audio controls autoplay loop> -->
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" preload="metadata">
+    </audio>
+
+
+    <hr>
+    <h2>Track para subtitular</h2>
+    <video width="400" height="400" controls autoplay loop preload="auto" muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <!-- kind="descriptions" -->
+        <track
+        kind="subtitles" 
+            src="./subtitulos_es.vtt"
+            srclang="es"
+            label="espanol"
+            default
+            >
+
+        tu navegador no soporta tag video
+    </video>
+    
+</body>
+</html>

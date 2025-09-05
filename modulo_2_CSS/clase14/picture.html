@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta Picture</title>
+    <style>
+        .contenedor-imagen{
+            border: 2px dashed #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Etiqueta Picture</h1>
+
+    <div class="contenedor-imagen">
+        <h2>Elemento img </h2>
+        <img src="../../icon.png" alt="mi icon"> 
+    </div>
+    <hr>
+    
+    
+        <div class="contenedor-imagen">
+            <h2>Elemento picture </h2>
+            
+            <picture>
+                <!-- <source media="(min-width)" srcset="URL">  -->
+                <source media="(min-width: 600px)" srcset="https://placehold.co/600x300/e66e6b/ffffff?text=Imagen_Grande">
+                <source media="(min-width: 400px)" srcset="https://placehold.co/400x200/e66e6b/ffffff?text=Imagen_Media">
+                <img src="../../icon.png" alt="mi icon"> 
+            </picture>
+        </div>
+</body>
+</html>

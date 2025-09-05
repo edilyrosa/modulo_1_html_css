@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            border:  2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagenes</h1>
+
+    <h2>Imagen Simple</h2>
+    <img
+    src="../../icon.png"
+    alt="imagen del icono"
+    loading="lazy"
+    width="400" height="400"
+    title="esta es el titulo, se vera al hacer :hover"
+    >
+
+    <h2>Imagen Responsiva</h2>
+    <img
+    src="../../icon.png"
+    srcset="
+    https://placehold.co/200x100/a395c5/ffffff?text=200w 200w,
+    ../../pc2.jpg 400w,
+    ../../pc.jpg 800w
+    "
+    alt="imagen del icono"
+    title="esta es el titulo, se vera al hacer :hover"
+    sizes="
+    (max-width:480px) 100vw,
+    (max-width:800px) 50vw,
+    800px
+    "
+    >
+</body>
+</html>
