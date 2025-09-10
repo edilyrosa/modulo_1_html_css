@@ -29,9 +29,10 @@
     <h2>Track para subtitular</h2>
     <video width="400" height="400" controls autoplay loop preload="auto" muted>
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        <!-- kind="descriptions" -->
+        
+        <!-- ! ❌kind="descriptions" ✅subtitles o captionses el correcto-->
         <track
-        kind="subtitles" 
+            kind="subtitles" 
             src="./subtitulos_es.vtt"
             srclang="es"
             label="espanol"
@@ -40,6 +41,7 @@
 
         tu navegador no soporta tag video
     </video>
+
     
 </body>
 </html>

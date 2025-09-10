@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .hijo{
+            background-color: yellow;
+            height: 100px;
+            /* width: lo vamos a calcular; */
+        }
+        .hijo2{
+            background-color: rgb(13, 43, 240);
+            height: 100px;
+            width:80vw;
+        }
+        .hijo3{
+            background-color: rgb(239, 60, 5);
+            height: 100px;
+            width:80%;
+        }
+        .hijo3{
+            background-color: rgb(37, 174, 165);
+            height: 100px;
+            width:800px;
+        }
+        .hijo4{
+            background-color: rgb(58, 227, 67);
+            height: 100px;
+            width:800px;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>ancho de 80%, 80vw, 800px dinamico vs. esttico</h1>
+    <div class="hijo" id="hijo"> ancho = anchoViewport * 0.8</div>
+    <div class="hijo2"> ancho = 80vw</div>
+    <div class="hijo3"> ancho = 80% (padre es body)</div>
+    <div class="hijo4"> ancho = 800px</div>
+    <div class="hijo4"> ancho = 800px + 20px de margin</div>
+    <p id="anchoTexto"></p>
+
+    <script>
+        function actualizaAncho(){
+            const anchoViewport = window.innerWidth;
+            const anchoHijo = anchoViewport * 0.8
+            const txt = document.getElementById("anchoTexto")
+            const divHijo = document.getElementById("hijo")
+            divHijo.style.width = anchoHijo + 'px'
+            txt. textContent = `El ancho del viewport es: ${anchoViewport} px y el ancho de hijo es  ${anchoHijo} p`
+        }
+
+        window.addEventListener('load', actualizaAncho)
+        window.addEventListener('resize', actualizaAncho)
+        
+    </script>
+</body>
+</html>

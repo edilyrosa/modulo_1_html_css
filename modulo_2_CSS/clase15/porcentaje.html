@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            background-color: black;
+            /* width: 200px; */
+        }
+        .contenedor p {
+           display: inline-block;
+        }
+
+        p:nth-child(1){
+            background-color: rgb(197, 241, 5);
+            width: 33%;
+        }
+        p:nth-child(2){
+            background-color: rgb(5, 13, 241);
+            width: 33%;
+        }
+        p:nth-child(3){
+            background-color: rgb(241, 29, 5);
+            width: 33%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Medida relativa con %</h1>
+    <div class="contenedor">
+        <p>hijo 1</p>
+        <p>hijo 2</p>
+        <p>hijo 3</p>
+    </div>
+</body>
+</html>
