@@ -1,0 +1,27 @@
+
+        /* Agupacion de selectores  */
+        h1, h2, h3, h4 {
+            text-align: center;
+            color: blue;
+        }
+        .btn{
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+         .btn:hover{
+            opacity: 0.5;
+         }
+
+        .btn-primary{
+            background-color: blue;
+            color: white;
+        }
+        .btn-send{
+            background-color: rgb(0, 255, 47);
+            color: white;
+        }
+        .btn-secondary{
+            background-color: rgb(144, 144, 149);
+            color: rgb(28, 1, 1);
+        }

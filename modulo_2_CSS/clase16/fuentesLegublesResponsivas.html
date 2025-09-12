@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            /* En pantallas pequenas: 1rem = 14px */
+            font-size: 14px; 
+        }
+
+        @media (min-width: 600px){
+              html{
+            /* En pantallas medianas: 1rem = 16px */
+            font-size: 16px; 
+            /* esta regla aplicara hasta que no sea sobrescrita */
+            /* background-color: aqua;  */
+        }
+        }
+        @media (min-width: 900px){
+              html{
+            /* En pantallas medianas: 1rem = 18px */
+            font-size: 18px; 
+        }
+        }
+        @media (min-width: 1200px){
+              html{
+            /* En pantallas medianas: 1rem = 20px */
+            font-size: 20px; 
+        }
+        }
+
+        body{
+            font-family: "Inter", Arial, Helvetica, sans-serif; 
+            padding: 1rem;
+            line-height: 1.6;
+        }
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h2{
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        p{
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .contraste-alto{
+            color: #000061;
+            background-color: #9494FF;
+        }
+        .contraste-bajo{
+            color: #9494FF;
+            background-color: #9C9C9C;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Fuentes Responsiva</h1>
+
+    <p class="contraste-alto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates officiis necessitatibus illum sequi, earum sapiente accusamus temporibus officia beatae soluta tempore nobis doloribus dolor praesentium? Impedit alias harum porro!
+    </p>
+    <h2>Subtitulo</h2>
+    <p class="contraste-bajo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae assumenda sit fuga vero asperiores sunt sequi nemo dicta natus! Voluptas fugit dolorum excepturi temporibus mollitia delectus minima minus aliquam?
+    </p>
+</body>
+</html>
